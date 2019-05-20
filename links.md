@@ -46,9 +46,9 @@ title: Links
 - [blog-local-workspace-template](blog/local-workspace-template.html)
 - [blog-more-or-less](blog/more-or-less.html)
 - [blog-skip-download-and-import](blog/skip-download-and-import.html)
-- [blog-local-workspace](local-workspace.html)
-- [blog-new-start](new-start.html)
-- [blog-why-500](why-500.html)
+- [blog-local-workspace](blog/local-workspace.html)
+- [blog-new-start](blog/new-start.html)
+- [blog-why-500](blog/why-500.html)
 </ul>
 
 ## Applications

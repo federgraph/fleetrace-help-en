@@ -1,200 +1,163 @@
 ---
 layout: default
-lang: de
-title: Nachrichtenplan
+lang: en
+title: FR Message Map
 ---
 
-<h1>Nachrichtenplan</h1>
+# Message Map
 
-<h2>Das Bild zum Nachrichtenplan</h2>
-<p>Die obere Zeile im Bild ist die Hauptachse des Nachrichtenverkehrs zwischen 
-Inputclient, Serveranwendung und Output-Klient.
-</p>
+## The picture of the message map
 
-<p>Ebenfalls dargestellt/angedeutet sind interne Verbindungen (gekennzeichnet 
-mit #).
-</p>
-<p>Die Punkte B und C sind abstrakte Verbindungs-Punkte. Real existieren externe 
-und interne Verbindungspunkte. Es gibt einen Softwareschalter zwischen den 
-internen und externen Punkten (Operation Connect/Disconnect).&nbsp; Im Zustand 
-Disconnected ignoriert der Server den externen Nachrichtenverkehr.
-</p>
+The following picture describes the messages between input client, 
+server application and output client. 
+It is the main axis of the message traffic. 
 
-<p>Unterhalb der Hauptachse ist die Switch Anwendung dargestellt. Mit Hilfe der 
-Switch Anwendung können Serverdaten synchronisiert sowie Switch Klienten indirekt 
-angeschlossen werden.
-</p>
+Also shown in the picture are internal connections (marked with #).
 
-<p>Ähnlich wie mit dem Switch können zwei Server über eine Bridge synchronisiert 
-werden. Bridgeverbindungen sind im Bild nicht dargestellt. Wegen der Umkehr der 
-Initiative beim Verbindungsaufbau sind beim Einsatz der Bridge in der Regel 
-keine Firewall Einstellungen notwendig. Silverlight Anwendungen werden zum 
-Beispiel über eine Bridge angeschlossen.
-</p>
+Points B and C are abstract connection points. 
+In reality there are external and internal connection points. 
+There is a *Switch* between the internal and external points (operations Connect/Disconnect). 
+In status Disconnected the server ignores external traffic.
 
-<p>Nachrichten können auch über eine eventuell im Server eingebettete Website 
-gesendet werden. Dies betrifft sowohl Eingangsnachrichten (Ajax), die 
-Anforderung von Reports und Steuerkommandos.</p>
+Shown below the *main axis* is the Switch application. 
+With the help of the Switch application server data can be synchronized between servers
+and Switch clients can be connected indirectly.
 
-<p>Die Anbindung von Bridge/Website erfolgt über die (internen) 
-Verbindungspunkte B und C. Die externen Verbindungspunkte B, C und H sind in 
-jedem Fall TCP-Server Sockets (Orange). Punkt V (Switch) ist ein 
-Http-Verbindungspunkt.
-</p>
+Similar to using the Switch two servers can be synchronized via a Bridge.
+Bridge connections are not shown in the picture.
+Because of the reversed initiative when establishing connections using the Bridge does not normally make firewall settings necessary.
+Silverlight applications are connected via a Bridge.
+
+Messages can be sent via a website that may be embedded into the server application.
+This applies to input messages (Ajax), requests of reports and control messages.
+The internal Bridge/Website is attached via internal connection points B and C. 
+External connection points B, C and H are in all cases TCP server sockets (orange). 
+Point V (Switch) is a Http connection point.
 
 ![RiggVar MsgMap drawing](../images/MsgMap.png)
 
-<h2>Verbindung AB</h2>
-<ul>
-<li>B1 im linken oberen Kasten bedeutet, dass eine Message von A nach B gesendet 
-werden kann. </li>
-<li>Der Buchstabe bezeichnet das Ziel. </li>
-<li>Die Herkunft kann durch die Verbindungslinie eindeutig zugeordnet werden.
-</li>
-<li>Die Ziffer nach dem Buchstaben kennzeichnet die verschieden Fälle. </li>
-<li><strong>B1 Input (1)</strong> - eine einzeilige Message kann vom Input zum 
-Server gesendet werden. </li>
-<li><strong>B2 Input (n)</strong> - der Server kann mehrzeilige Messages vom 
-Input empfangen.
-</li>
-<li><strong>B3 Request (1)</strong> - die Message enthält einen einfachen 
-Request. </li>
-<li><strong>B4 Request (n)</strong> - die Message enthält einen mehrfachen 
-Request (n-fach).
-</li>
-<li><strong>B5 Request + Input</strong> - die Message enthält neben Input 
-mindestens einen Request.
-</li>
-<li><strong>A1 Receipt</strong> - steht für die optionale Quittung auf eine 
-einzeilige Message.
-</li>
-<li><strong>A2 Response</strong> - bezeichnet die Antwort auf einen einfachen 
-Request (mit oder ohne Input) </li>
-<li><strong>A3 Response (n)</strong> - bezeichnet die zusammengesetzte Antwort 
-(xml CDATA) auf einen mehrfachen Request am Input.</li>
-</ul>
-<h2>Verbindung CD</h2>
-<ul>
-<li><strong>D1 Multicast</strong> - jede einzeilige Message vom Input wird an 
-alle am Output angeschlossenen Systeme weitergesendet. Dies erfolgt nach 
-Verarbeitung und Neuberechnung (unter Verwendung der internen MessageQueue). </li>
-<li><strong>C1 Request</strong> - ein Output Klient fordert am Verbindungspunkt C 
-(Server Output Socket) einen Report an, der unverzüglich generiert und 
-zurückgesendet wird.</li>
-<li><strong>D2 Report</strong> - ein zuvor angeforderter Report erreicht den 
-Client-Socket D der Output Anwendung. </li>
-</ul>
-<h2>Verbindung #B </h2>
-<ul>
-<li><strong>B6 Calc Stateless</strong> - Mehrzeilige Message, gesendet über 
-interne Verbindung an Input B. Enthält die vollständigen Eventdaten, identisch 
-mit einem Backup. Enthält weiterhin einen oder mehrere Requests für 
-zurückzuliefernde Reports. Das primäre Anwendungsobjekt (BO) wird neu erzeugt 
-und nach dem Methodenaufruf (Calc) wieder freigegeben. Es ist der typischer Fall 
-bei einer Webanwendung. Es wird aber auch beim statuslosen 'Test/Calc-Server' 
-verwendet. </li>
-<li><strong>B7 Calc Statefull</strong> - Mehrzeilige Message, gesendet über 
-interne Verbindung an Input B. Enthält einen Request für den zurückzuliefernden 
-Report. Das BO wird nicht neu erzeugt, der Status des BO wird beibehalten. </li>
-<li><strong>B8 Event Type ID</strong> - markiert eine interne Verbindung mit der 
-Eventtyp-ID. Dies hat eine Bedeutung in einem Multieventtypserver, der über 
-einen vorgeschalteten Messagerouter verfügt. Damit ist dieser in der Lage die 
-Nachrichten über die richtige interne Verbindung weiterzuleiten, d. h. die 
-Message zur Verarbeitung an das BO vom richtigen Typ zu senden. Jedes BO hat die 
-Verbindungspunkte B und C. </li>
-<li><strong>#2 Response (1)</strong> - wie A2, nur über interne Verbindung </li>
-<li><strong>#3 Response (n)</strong> - wie A3, nur über interne Verbindung </li>
-</ul>
-<h2>Verbindung C#</h2>
-<ul>
-<li><strong>#1 Multicast</strong> - steht für ein Messagemulticast über interne 
-Verbindungen. # kennzeichnet interne Verbindungen. Interne Verbindungen werden 
-zum Beispiel aufgebaut, wenn in einer Serveranwendung Input-&nbsp; und/oder 
-Output Klienten integriert wurden. </li>
-</ul>
-<h2>Verbindung XY</h2>
-<ul>
-<li><strong>Y1 Plugin</strong> - ein Switch Klient fordert den Aufbau von (ein 
-oder zwei) Verbindungen an. Dazu wird Verbindungspunkt Y verwendet, den der 
-Switch bei Programmstart öffnet. Daraufhin wird der Switch die Verbindungen EB 
-und/oder FC herstellen, wie angefordert, wenn es sich um einen Server handelt. 
-Im Falle eines Switch Klienten wird stattdessen die Verbindung GH aufgebaut. Es 
-sind in jedem Fall ganz normale Socket Verbindungen zum jeweiligen Partner. </li>
-<li><strong>Y2 Plugout</strong> - Umkehr von Plugin, der Switch schließt 
-daraufhin die Verbindungen. Ein Switch Klient sollte bei Programmende automatisch 
-die Verbindung schließen. Normalerweise ist das Schließen eine manuelle Aktion 
-(z.B. verfügbar über das Hauptmenü).
-</li>
-<li><strong>Y3 Synchronize</strong> - Falls der Switch über einen eingebauten 
-Cache verfügt können damit alle im Cache vorhandenen Reports als ungültig 
-markiert werden (Age+1). Dies kann einen automatischen&nbsp; Aktualisierungsdurchlauf 
-starten. </li>
-<li><strong>Y4 Upload</strong> - Ankündigung eines Uploads, unmittelbar 
-nachfolgend wird Y5 gesendet. Im Switch wird ein Flag gesetzt, so dass die 
-nachfolgende Message abweichend vom normalen Modus als Backup gespeichert wird. </li>
-<li><strong>Y5 Upload Data</strong> - Senden eines Backups zur Speicherung im 
-Hauptspeicher der Switch Anwendung. </li>
-</ul>
-<h2>Verbindung UV</h2>
-<ul>
-<li><strong>V1 Download</strong> - Anforderung eines Downloads. </li>
-<li><strong>U1 Download Data</strong> - die Antwort, also die Kombination aus 
-gespeichertem Backup und Log. Das Log kann, je nach Event Typ, mit einer 
-Merge-Funktion automatisch komprimiert werden, so dass sich nur das jeweils 
-letzte Telegramm der jeweiligen Adresse im Log befindet. </li>
-</ul>
-<h2>Verbindung GH</h2>
-<p></p>
-<ul>
-<li><strong>G1 Cache Request</strong> - der Switch Klient fordert einen Report 
-an, der aus dem im Switch eingebauten Cache stammen soll. </li>
-<li><strong>G2 Live Request</strong> - der Switch Klient stellt eine Report 
-Anforderung, die sofern möglich, an einen Server durchgestellt wird. Ein 
-eventuell vorhandener Cache wird nicht benutzt. Wenn mehrere Server am Switch 
-angeschlossen sind so wird der als Masterserver gekennzeichnete Server den 
-Request erhalten. Falls kein Server als Masterserver gekennzeichnet ist wird 
-automatisch mit einer einfachen Methode ein Server bestimmt. </li>
-<li><strong>G3 Current Request</strong> - die Anforderung verlangt, dass ein 
-Report nur dann aus dem Cache gezogen wird, wenn der Report im Cache als aktuell 
-gekennzeichnet ist. Sonst wird die Reportanfrage synchron von einem Server 
-bearbeitet.
-</li>
-<li><strong>G4 Input (1)</strong> - ein einzeiliger Input wird vom 
-Switch Input Klient an den Switch übergeben, der diesen über Punkt E an einen 
-Server weiterleitet. Die Bestimmung des Servers erfolgt wie bei G2. </li>
-<li>Die Message <strong>F1</strong> zum Switch wird an alle Switch Output Klienten 
-weitergeleitet. Eine Switch Verbindung GH ist entweder als Input oder als Output 
-gekennzeichnet. Nur die Outputs erhalten Multicastmessages. Ein am Switch 
-angeschlossener Output Klient verhält sich damit genauso wie ein am Punkt C 
-angeschlossener normaler Output Klient. Lediglich der Socket Typ (Client oder 
-Server) sowie die Initiative beim Verbindungsaufbau dreht sich um. 
-Switch Klienten sind nur mittelbar verbunden, können aber den Cache abfragen.</li>
-<li><strong>H1 Multicast</strong> - die Multicastmessage erreicht einen 
-Switch Output Klienten.
-</li>
-<li><strong>H2 Report</strong> - ein angeforderter Report erreicht den 
-Switch Klienten. </li>
-</ul>
-<h2>Verbindung WB</h2>
-<ul>
-<li><strong>B2 Blocking Request (1)</strong> - eine Anfrage G2 oder G3 kann vom 
-Switch mit Hilfe eines blockierenden Requests B2 an einen Server gestellt 
-werden. </li>
-<li><strong>W1 Response (1)</strong> - die Antwort auf B2. Da die Anforderung 
-blockierend ist kann die Antwort leicht an den anfordernden Switch Output 
-zurückgeliefert werden. Die Antwort wird in der Regel zusätzlich im Cache 
-gespeichert. Normalerweise wird der Cache mit asynchronen Requests über Punkt E 
-gefüllt. </li>
-</ul>
-<h2>Verbindung FC</h2>
-<ul>
-<li><strong>C1 Request</strong> - ein weitergeleiteter Request von Punkt G, 
-siehe C2. </li>
-<li><strong>C2 Blocking Request</strong> - Es ist der Switch Implementierung 
-überlassen, ob sie Anforderungen von Punkt G als C1- oder C2-Message 
-implementiert. </li>
-<li><strong>F1 Multicast</strong> - einzeilige Message, die mit Multicast vom 
-Server weitergesendet wird.</li>
-<li><strong>F2 Report</strong> - die Antwort auf einen Request für die 
-Auslieferung eines Reports. </li>
-</ul>
+## Connection AB
+- B1 in the top left box means that a message can be sent from A to B. 
+- The Character designates the target. 
+- The origin can be determined by the connecting line. 
+- The digit following the character designates the different cases.
+- **B1 Input (1)** - a single line message can be set from Input to Server. 
+- **B2 Input (n)** - the Server can receive multi line messages from Input. 
+- **B3 Request (1)** - the message contains a single Request. 
+- **B4 Request (n)** - the message contains a multiple Request (n-time).
+- **B5 Request + Input** - in addition to input the message contains at least one Request.
+- **A1 Receipt** - designates an optional acknowledgement for a single line message.
+- **A2 Response** - designates the answer to a single Request (with and without attached Input)
+- **A3 Response (n)** - designates the composed answer (xml CDATA) to a multiple Request at Input.
+
+# Connection CD
+
+- **D1 Multicast** - every single line message from Input is passed on to all connected systems at Output.
+This happens after processing and computation (using the internal Message Queue). 
+- **C1 Request** - an Output client requests a Report at connection point C (server output socket) which is generated and sent back without delay.
+- **D2 Report** - a previously requested Report is reaching client socket D of the Output application. 
+
+## Connection #B
+
+- **B6 Calc Stateless** - A multi line message sent via an internal connection to Input B.
+Contains a complete set of event data, identical to a Backup.
+Also contains one or more requests of a report.
+The primary application object (BO) is recreated and destroyed after the method call (Calc).
+This is a typical case in a web application.
+But it is also the case with a stateless Test/Calc server.
+- **B7 Calc Statefull** - A multi line message sent via an internal connection to Input B.
+Contains a request of a report.
+The BO is not recreated; the status of the BO is maintained. 
+- **B8 Event Type ID** - marks an internal connection with the Event-Type-ID.
+This is meaningful in a Multi-Event-Type-Server that uses a preview/front side message router.
+By marking the connection point it is possible to route messages via the correct internal connection,
+i.e. sending the message for processing to the right type of BO.
+Every BO has connection points B and C.
+- **#2 Response (1)** - like A2, only via internal connection
+- **#3 Response (n)** - like A3, only via internal connection
+
+## Connection C#
+
+- **#1 Multicast** - stands for a message multicast via internal connection. # designates internal connections. 
+For example, internal connections are used where input and/or output clients are integrated into the server application.
+
+## Connection XY
+
+In the picture there are two XY connections, one originating from the server, 
+and one more originating from the Switch Client. 
+The box is drawn close to the bottom connection (from Switch Client),
+but it is valid for both drawn connections.
+
+The Switch with Http end points Y and V does not have TCP server sockets.
+Instead it has TCP client sockets.
+For example there can be on instance of the shown Client Socket E or multiple instances.
+Whereby the connections can go to the same server or to different instances of the server application.
+Imagine the Switch as a table with rows (entries).
+Each row will specify a connection. You can add rows or remove rows.
+The Switch mediates between two applications,
+that both have listening sockets (server sockets) open,
+and therefor cannot connected directly.
+
+- **Y1 Plugin** - a Switch client requests that one or two connections be established.
+For that a connection point Y is used, which is opened by the Switch at program start.
+Following that the Switch will connect to point EB and/or FC, 
+as requested, in the case of a server issuing the request.
+In the case of a Switch client the connection GH is established.
+In all cases normal socket connections are used to connect to the partner.
+- **Y2 Plugout** - Reversal of operation Plugin, the Switch will close the connections.
+A Switch client should close the connection at program end automatically.
+Normally closing the connection is a manual action (e.g. available via the main menu).
+- **Y3 Synchronize** - If the Switch uses a built in Cache all reports held in the Cache are marked as invalid (Age+1).
+This may trigger a automatic update cycle. 
+- **Y4 Upload** - Notice of an Uploads, messages Y5 is immediately following.
+In the Switch a flag is set, so that the following message is stored as a Backup.
+This is in deviation from the normal mode of operation. 
+- **Y5 Upload Data** - Transmission of a Backup for storage in memory of the Switch application.
+
+## Verbindung UV
+
+- **V1 Download** - Request of a Download. 
+- **U1 Download Data** - the response, that is the combination of stored Backup and Log.
+Depending on the type of Event the Log can automatically be compressed using a merge function
+such that only the last message of the respective address is left in the Log.
+
+## Verbindung GH
+
+- **G1 Cache Request** - the Switch client requests a Report which should come from the Cache built into the Switch. 
+- **G2 Live Request** - the Switch client requests a Report that should be passed on to a Server if possible.
+If a Cache is available it is not used.
+If several Servers are attached to the Switch the Server marked as Master will receive the Request.
+If no Server is marked as Master a target Server is automatically selected using a simple algorithm. 
+- **G3 Current Request** - the request with the notion that a Report is taken from the Cache only if the Report in the Cache is marked as current.
+Otherwise the request of report is processed synchronously by a Server. 
+- **G4 Input (1)** - a single line Input is passed from Switch Input client to the Switch which will pass the message via point E to a Server.
+The selection of the destination Server follows the same procedure as with message G2.
+- **H1 Multicast** - a multicast message reaches a Switch output client. 
+- **H2 Report** - a requested Report reaches the Switch client. 
+
+The message F1 to the Switch is passed on to all Switch output clients, via point H.
+A Switch connection GH is either marked as Input or Output.
+Only the Outputs receive multicast messages.
+An Output client connected to the Switch is acting exactly like a normal Output client connected to point C.
+It is only the type of socket (client or server) and the initiative at establishing a connection that is reversed.
+While Switch clients can only be indirectly connected they can retrieve reports from the Cache.
+
+## Verbindung WB
+
+- **B2 Blocking Request (1)** - a request G2 or G3 can be issued to a server by the Switch with the help of a blocking request B2. 
+- **W1 Response (1)** - the response to B2. Because of the blocking nature it is easy to deliver the answer back to the requesting Switch output client.
+The response is stored in the Cache too.
+Normally the Cache is populated using asynchronous Requests via point E. 
+
+## Verbindung FC
+
+- **C1 Request** - a passed on Request from point G, see C2. 
+- **C2 Blocking Request** - It is left to the Switch implementation whether it is implementing requests from point G as a C1 or C2 message. 
+- **F1 Multicast** - single line message which was passed on by a Server using multicast at the output socket. 
+- **F2 Report** - the answer is arriving with a previously requested report. 
+
+```
+That's all.
+```
+
+[Back](doc-index.html) to the the docs.
