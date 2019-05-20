@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+---
+layout: default
+lang: en
+---
 
-You can use the [editor on GitHub](https://github.com/federgraph/fleetrace-help-en/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Hi, this is the *documentation* for project FR, see source at [GitHub](https://github.com/federgraph).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Part of the content has been recycled from old blog posts.
+It may be outdated by now and removed.
+But I want to start with this version, so that it becomes part of the history.
 
-### Markdown
+This is currently work in progress, as always.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# FR01
 
-```markdown
-Syntax highlighted code block
+#### An Open Source Application
 
-# Header 1
-## Header 2
-### Header 3
+[FR01](applications/FR01.html) is the program you can use to analyze the event data of a sailing regatta in FR format.
 
-- Bulleted
-- List
+Example: Immediately after the race is done you download the current standing as of yesterday, with button click in FR01.
+You be quick and input finish positions of the race just completed.
+The application computes the new result, series points and overall ranking.
 
-1. Numbered
-2. List
+Then you can change the number of throwouts and have a look.
+You could add or remove penalties and of course: *modify* finish positions.
+That should be fun.
 
-**Bold** and _Italic_ and `Code` text
+> Your changes can be posted back to the server if the server does allow this.
 
-[Link](url) and ![Image](src)
-```
+FR01 should be made available on several platforms as we go.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Just an Idea, your mileage may vary
 
-### Jekyll Themes
+The data used by FR01 may just be html fragments,
+which can be embedded unchanged on the Web site of the event.
+This way you don't have text, xml or json, but html. What is special about the html
+is that it does contain a complete representation of the data of the event.
+So it is possible for a program such as FR01 to read that data and exactly reproduce the results.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/federgraph/fleetrace-help-en/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+While the Html is kept current by the program,
+the look in the browser can be independently improved by the designer of the site.
 
-### Support or Contact
+#### Use of static files
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+For a single event it is enough to post a single static html file to the server.
+
+In the typical case you will have several files,
+one html file for each class of boat (the events),
+and one xml file, EventMenu.xml would be a good name,
+which serves as a list of available content, the event data files,
+so that the application will know where the files are.
+
+
+
