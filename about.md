@@ -9,11 +9,11 @@ FR Blog starts with the *operating instructions* for program FR01.
 
 ## Old .chm file, Compiled Html Help
 
-![Old CHM](../images/CHM.png)
+![Old CHM](images/CHM.png)
 
 ## About FR01
 
-[FR01](../applications/FR01.html) is easy to use - it should be easy to use - I think it is.
+[FR01](applications/FR01.html) is easy to use - it should be easy to use - I think it is.
 
 But then, what is so special about that program?
 
