@@ -37,16 +37,18 @@ title: Links
 </ul>
 
 ## Blog
-<ul>
-<li><a href="./blog/blog-index.html">blog-index</a></li>
-<li><a href="./blog/download-example-data.html">blog-download-example-data</a></li>
-<li><a href="./blog/bib-or-bow.html">blog-bib-or-bow</a></li>
-<li><a href="./blog/data-format.html">blog-data-format</a></li>
-<li><a href="./blog/how-to-enter-finish-list.html">blog-how-to-enter-finish-list</a></li>
-<li><a href="./blog/how-to-work-with-excel.html">blog-how-to-work-with-excel</a></li>
-<li><a href="./blog/local-workspace-template.html">blog-local-workspace-template</a></li>
-<li><a href="./blog/more-or-less.html">blog-more-or-less</a></li>
-<li><a href="./blog/skip-download-and-import.html">blog-skip-download-and-import</a></li>
+- [blog-index](blog/blog-index.html)
+- [blog-download-example-data](blog/download-example-data.html)
+- [blog-bib-or-bow](blog/bib-or-bow.html)
+- [blog-data-format](blog/data-format.html)
+- [blog-how-to-enter-finish-list](blog/how-to-enter-finish-list.html)
+- [blog-how-to-work-with-excel](blog/how-to-work-with-excel.html)
+- [blog-local-workspace-template](blog/local-workspace-template.html)
+- [blog-more-or-less](blog/more-or-less.html)
+- [blog-skip-download-and-import](blog/skip-download-and-import.html)
+- [blog-local-workspace](local-workspace.html)
+- [blog-new-start](new-start.html)
+- [blog-why-500](why-500.html)
 </ul>
 
 ## Applications

@@ -39,5 +39,5 @@ Button X will exclude/include a race from scoring (please make sure a cell of th
 Points/Finish buttons toggle the display mode (what is shown in the cells).
 The Color button will switch between different background coloring schemes.
 
-The RIVAC demo can be launched from the demo start page.
+The RIVAC demo could be launched from the demo start page.
 

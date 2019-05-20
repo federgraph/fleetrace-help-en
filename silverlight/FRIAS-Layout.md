@@ -7,7 +7,7 @@ lang: en
 
 # FRIAS Layout
 
-Silverlight Control FRIAS can be placed with different size at the page.
+Silverlight Control FRIAS can be placed with different size on a page.
 In this way several different layouts can be achieved.
 The user could choose a layout with the help of **DemoMenu.xap**, itself a Silverlight Control:
 
@@ -35,20 +35,20 @@ I have started up an older machine with Windows XP in order to take the screensh
 At my current machine with Windows 10 there is no support for Silverlight any more, 
 and the old projects cannot be loaded into Visual Studio 2019.
 I could open the old projects in VS Code, but here I just wanted to see if it still works,
-now that I am writing about it, `17 May 2019`.
+now that I update the writing about it, in `May 2019`.
 
 Back to the test of DemoMenu.xap with Windows XP. The control appears on the screen ok, 
 but when I click a button nothing happens.
 It was expected to take me to another html page with **FRIAS.xap**, supposed to be configured to have the chosen layout,
-there may or may not be other elements on the page, like normal content.
+there may or may not be other elements on that page, like normal content.
 
 > It worked in the past.
 
 The good new: If I call up [FRIAS-1.html](FRIAS.html) directly it still works, and that is nice.
 
-## Vollbild (Align Client)
+## Full Screen (Align Client)
 
-In order to show FRIAS as big as possible in the browser window, and to keep it big when resizing,
+In order to show FRIAS as big as possible in the browser window, and to keep it aligned when resizing,
 some `css` and `javascript` is used, like so:
 
 ```html
@@ -114,9 +114,10 @@ d.width(b.width() - d.offset().left);
 ```
 
 This should be the layout variation FRIAS-6, according to button position 6, 
-see bottom right in the picture. It still works, on the old machine with Silverlight support installed.
+see bottom right button in the picture.
+It still works, on the old machine, where support for Silverlight installed.
 
-> But it is all about the modern variations.
+> But it should be all about the modern variations.
 
 I know, but I begin with some history, 
 the syntax highlighting with the help of Jekyll and Rouge is beautiful don't you think?

@@ -1,12 +1,12 @@
 ---
 layout: default
-lang: de
-title: Komponenten
+lang: en
+title: Components
 ---
 
 # Components
 
-![FR pyramid](../images/FR62-Pyramide-05.png)
+![FR pyramid](images/FR62-Pyramide-05.png)
 
 Project FR includes normal desktop applications, server processes, timing clients, web applications and Silverlight clients.
 

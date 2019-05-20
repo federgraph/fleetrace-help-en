@@ -24,7 +24,7 @@ The data will be complete, and can therefore be changed - newly computed on the 
 FR is the first commonly available result system, which strictly follows this approach.
 
 The usual reports of sailing regatta results usually omit information.
-For example, the finish position a boat that was disqualified after finishing will not be included.
+For example, the finish position of a boat that was disqualified after finishing will not be included.
 With incomplete information, no what-if-analysis can be carried out on the client side. 
 That's why there is FR - with complete data and freely available tools on the client side.
 

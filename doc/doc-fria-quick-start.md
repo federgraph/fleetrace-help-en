@@ -15,7 +15,7 @@ Variante FRIA05.xap gemeint, im nachfolgenden der Silverlight client.
 
 ## FR97
 
-Als erstes sollten Sie sich das Paket [FR97](../applications/FR97.html) 'besorgen', welches folgendes enthält:
+Als erstes sollten Sie sich das Paket [FR97](../applications/FR97.html) *besorgen*, welches folgendes enthält:
 - den Silverlight client im Ordner ClientBin
 - die Beispieldaten unterhalb von docroot/Results/
 - darin EventMenu.xml, das Verzeichnis für die Beispieldaten

@@ -9,11 +9,10 @@ lang: en
 *Screenshot von Freo.*<br>
 ![Screenshot von FREO](../images/FREO.png)
 
-The last action in the picture above has been: **Bib 2** was tapped on, when `dnf` was selected.
+The last action taken in the picture above has been: **Bib 2** was tapped on, while `dnf` was selected.
 Note that the radio button selection jumps back automatically to the default value of `finish`.
 Previously the finish of Bib 4 and Bib 6 had been recorded.
-We are in Race 1 (**R1**).
-Bib 2 (bow number 2) is currently selected, because it was last used.
+We are in Race 1 (**R1**) and Bib 2 (bow number 2) is currently selected because it was last used.
 
 ## Externer Link
 

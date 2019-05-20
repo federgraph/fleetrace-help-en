@@ -1,6 +1,6 @@
 ---
 layout: default
-lang: de
+lang: en
 title: Event Properties
 ---
 		
@@ -38,33 +38,36 @@ EP.IsTimed = False
 EP.UseCompactFormat = True
 ```
 
-- StartlistCount muss auf 20 gestellt werden, weil der Event 20 Teilnehmer (Entries) hat.
-- ITCount muss auf 0 stehen, weil keine Zeiten erfasst werden, nur Zielpositionen.
-- RaceCount muss auf 11 gesetzt werden (10 + 1).
-- Name ist ein beliebiger kurzer Text und erscheint im Html-Format als Überschrift.
-- ScoringSystem kann unverändert bleiben. Das ist ein extra Artikel.
-- Throwouts auf 1 bedeutet 1 Streicher und kann vom Programm aus verändert werden.
-- ReorderRAF sollte auf False stehen und True nur in Ausnahmefällen (je nachdem wie die Regel ausgelegt werden soll).
-- DivisionName = * braucht nicht geändert zu werden, das ist hier immer die richtige Einstellung.
-- InputMode sollte auf Strict stehen, wenn die eingegebenen Informationen konsistent sind (eindeutig und/oder fortlaufend), also normalerweise immer.
-- RaceLayout auf Finish zu stellen ist die richtige Wahl, wenn Sie Daten eingeben und die Zielpositionen sehen wollen,
-  und nicht die Punkte. Kann vom Programm aus geändert werden.
-- NameSchema NX ist Standard und für neue Dateien zu empfehlen.
-- FieldMap auf N3 bedeutet, dass das Namensfeld N3 auf die Spalte DisplayName abgebildet wird.
-- FieldCaptions enthält die Überschriften der Namen-Spalten.
-- FieldCount auf 3 bedeutet, dass 3 Spalten gespeichert werden sollen.
-- NameFieldCount auf 3 bedeutet, dass drei Spalten in der Event-Tabelle angezeigt werden (kann weniger sein).
-- NameFieldOrder 123 bedeutet, dass die drei Spalten in dieser Reihenfolge erscheinen. Es werden niemals mehr als 9 Spalten angezeigt.
-- UseFleets muss hier auf True stehen, weil es ein MedalRace gibt.
-- TargetFleetSize auf 20 entspricht StartlistCount. Nur im MedalRace starten nicht alle.
-- FirstFinalRace auf 11 kennzeichnet hier das MedalRace. Das MedalRace ist das letzte Race nach Abschluss der Qualifikationsrunde, die hier 10 Rennen enthält.
-- IsTimed auf False besagt, dass keine Zeiten gespeichert werden. FR01 speichert keine Zeiten.
-- UseCompactFormat auf True ist meistens richtig, weil sich die Daten im kompakten Textformat am besten mit dem Texteditor bearbeiten lassen.
+- StartlistCount must be set to 20, because the Event has 20 participants (Entries). 
+- TCount must be set to 0, because no times will be recorded, only finish positions. 
+- RaceCount must be set to 11, because there are 10 normal races and one medal race. 
+- Name is an arbitrary and short text and appears in Html format as heading. 
+- ScoringSystem can remain unchanged. There may be an extra article. 
+- Throwouts set to 1 means 1 race to throw out and can be changed from within the application. 
+- ReorderRAF should be False and True only in special cases (depending on how the rules are to be interpreted). 
+- DivisionName = * does not need change, this is always being used here. 
+- InputMode should read Strict, if the information given is consistent (unique and/or contiguous), that should always be the case. 
+- RaceLayout set to Finish is the correct Choice when you want to input data and see the finish positions instead of the points.
+  This option can be changed from within the application. 
+- NameSchema NX is the default and recommended for new files. 
+- FieldMap set to N3 means that the name field N3 will be mapped to DisplayName column. 
+- FieldCaptions contains the headings of the name columns. 
+- FieldCount set to 3 means that 3 columns should be saved. 
+- NameFieldCount set to 3 means that three columns should be shown in the Event Table (can be less). 
+- NameFieldOrder 123 means that the three columns should appear in this order.
+  No more than 9 columns will be shown. 
+- UseFleets must be True, because there will be a medal race. 
+- TargetFleetSize set to 20 corresponds to StartlistCount. Only in the medal race will we have smaller fleet (10). 
+- FirstFinalRace set to 11 designates the medal race. The medal race is the last race, after qualification round, which in this case comprises 10 races. 
+- IsTimed set to False means that no times will be stored. FR01 cannot store times. 
+- UseCompactFormat set to True is the right setting most of the time, 
+  because data in compact format is best for editing in external (spreadsheet) program. 
 
-Ausgehend von einem guten Beispiel müssen Sie nur folgende Eigenschaften anpassen: **StartlistCount**, **TargetFleetSize** und **Name**. 
-Aus StartList löschen Sie die überzähligen Starter heraus. 
-FinishList kann komplett gelöscht werden. Auf FleetList und NameList gehe ich in einem extra Artikel ein. 
-Alles Weitere können Sie von der Oberfläche des Programms aus erledigen.
+Starting from a good example you only have to adjust the following properties: **StartlistCount**, **TargetFleetSize** and **Name**. 
+From StartList you delete surplus entries. 
+FinishList can be deleted completely. 
+FleetList and NameList will be explained in another Article. 
+All the rest can be done from within the application, using the UI, the graphical user interface.
 
 Here is the complete template for 470 W:
 
@@ -201,5 +204,5 @@ FR.*.W11.IsRacing=False
 EP.IM = Strict
 ```
 
-Und natürlich ist es noch einfacher, wenn kein MedalRace gesegelt wird!
+And of course, it is even easier if there is no medal race!
 

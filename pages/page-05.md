@@ -4,7 +4,7 @@ lang: en
 title: Use Cases
 ---
 
-[Skip](../links.html) that it is very old. Now we have Open Source.
+[Skip](../links.html) that, this is very old. Now we have Open Source.
 
 ## UC 1
 
@@ -22,9 +22,9 @@ A link on a page will load another page with Silverlight Client FRIA4 into the b
 The Silverlight Client will download and process an EventMenu.xml file from the server,
 and single Event.xml files later when the user selects the specific Event. 
 
-The number of EventMenu.xml files and Event.xml files that are managed by the Website is not unlimited.
-If a constant number of events are created und reused, then the EventMenu.xml may remain unchanged.
-Updating an event is reduced to uploading the specific Event.xml file.
+The number of EventMenu.xml files and Event.xml files that are managed by the Website is not limited.
+If a constant number of events are created und reused the EventMenu.xml can remain unchanged.
+Updating an event is then reduced to uploading the specific Event.xml file.
 
 ## UC 2
 

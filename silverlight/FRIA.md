@@ -57,4 +57,4 @@ The special design may include the logo of the host club and/or sponsor logos.
 The RiggVar FleetRace Internet Applications are licensed for use on a site.
 The individual design will be applied when the project is compiled for use on the target site.
 
-Even if one starts with the default look to test the technical aspect an update of the design is can always be done later.
+Even if one starts with the default look to test the technical aspect, an update of the design can always be done later.

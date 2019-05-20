@@ -1,6 +1,6 @@
 ---
 layout: default
-lang: de
+lang: en
 title: FRIA11
 ---
 
@@ -8,13 +8,14 @@ title: FRIA11
 
 # FRIA11
 
-FRIA11 ist auf die Anzeige der Zwischenzeiten bzw. Bojen-Rundungs-Zeiten ausgelegt.
+FRIA11 can be used to display intermediate times at mark roundings.
 
 ![FRIA11 screenshot](../images/FRIA11.png)
 
-Hier im Bild ist der Finisht Timepoint (FT bzw. IT0) für Race 1 zu sehen.
-Bei Definition von mehreren Zwischenzeiten (ITX) werden im Grid entsprechend viele Spalten angezeigt.
-Anhand der Rückstandszeiten können Sie den Verlauf des Rennens verfolgen.
+In the picture you can see the finish time point (IT0 alias FT for Race 1.
+If more than zero intermediate time points (ITX) are configured, a corresponding number of columns will be shown in the grid.
+By looking at the time behind you can follow the progress of the race.
 
-Bilder vom Fernsehen sind unschlagbar, Trackingsysteme immer noch ziemlich aufwendig, 
-und die FleetRace Internetanwendungen in Verbindung mit manueller Eingabe in Echtzeit eine gute Alternative.
+TV images are unbeatable, no one wants to see the computer simulation.
+Tracking systems are complex and costly to set up, 
+but the Fleetrace Internet applications in combination with manual input in real time are perhaps a good alternative.

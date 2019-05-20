@@ -1,6 +1,6 @@
 ---
 layout: default
-lang: de
+lang: en
 title: FRIA05
 ---
 
@@ -8,17 +8,19 @@ title: FRIA05
 
 # FRIA05
 
-Die FR Desktopanwendungen [FR04](../applications/FR04.html), [FR62](../applications/FR62.html) haben einen eingebetteten Server,
-der neben dynamischen Html-Seiten und Ajax-Klienten auch Silverlight Klienten ausliefern kann.
+## From 2012
 
-Das Bild (Screenshot) zeigt FRIA05, wenn es von der Desktopanwendung geladen wird.
+The FR desktop applications [FR04](../applications/FR04.html), [FR62](../applications/FR62.html) feature an embedded server,
+which can serve the Silverlight Client, besides of dynamic Html pages and Ajax clients.
+
+The image (screenshot) shows FRIA05, when served from the desktop application.
 
 ![FRIA05 screenshot](../images/FRIA05.png)
 
-- FRIA05 kann auch von einer statischen Website ausgeliefert werden.
-- Außer der .xap Datei für die Silverlight Anwendung selbst müssen Sie dazu nur die Xml-Dateien für die Events 
-und ein Verzeichnis dieser Daten (EventMenu.xml) auf dem Server ablegen.
-- Der Server kann natürlich auch ein Linux-Webserver sein.
-- Die Anwendung wurde mit Internet Explorer, Firefox und Safari getestet.
+- FRIA05 can be served by a static web site.
+- In addition to the .xap file for the Silverlight application itself you only need to provide the xml files for the events
+and a directory listing of these files in form of EventMenu.xml.
+- The server can be a Linux web server, of course.
+- The application has been tested with Internet Explorer, Firefox and Safari.
 
-Von der Demo Startseite ausgehend können Sie probieren.
+You could try it out from the Demo page (in 2012).
