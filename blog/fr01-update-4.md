@@ -15,17 +15,17 @@ This is a pseudo blog post, from 2019-05-21, 05 = May.
 ## Update 2
 
 The new *feature* in Update 2 is the **Read** button on *page Menu*.
-You can use it to load/reload text from the **Memo**.
+You can use it to load/reload text from the **Memo** on *page Report*.
 Let the application directly load data you have changed/edited in the Memo control.
 
-Two buttons have been added to *page Report*.
-They can be used to toggle between the separator char in csv lists, in the Memo.
+Two more buttons have been added to *page Report* too.
+They can be used to toggle between the separator char used in csv lists, in the Memo.
 The buttons will make it easier to *exchange* data with Excel.
 
-1. Before you copy data out of the Memo for pasting into Excel, you choose (convert to) **Tab** separator.
+1. Before you copy data out of the Memo for pasting into Excel, you convert to **Tab** separator.
 
-2. After you have pasted data from Excel into the Memo you change back to using **Semicolon** as a separator.
-This is necessary in order to load the data successfully with button Read.
+2. After you have pasted data from Excel into the Memo you convert back to using **Semicolon** as a separator.
+This is necessary in order to load text data successfully, with button Read on page Menu.
 
 > FR expects csv data to be semicolon separated.
 
@@ -90,11 +90,13 @@ changes in update 3 - build number 1.0.4580.50956
 The Toolbar-Buttons for replacing tabs and semicolons (useful when working with Excel)
 have been removed - use the keyboard shortcuts.
 ```
-Ich habe die readme siehe oben etwas gekürzt, die Lizenz Info herausgelöscht, weil nicht mehr relevant, jetzt ist alles GPL 3.0.
+> I slightly modified the readme text above;
+> I removed old license info, no longer relevant,
+> since I have published the source of FR01 under GPL 3.0 on GitHub.
 
 ### About FR01.exe in Update 4
 
-Update 4 came as zip file and contained the following items, minus the pictures from testing:
+Update 4 came as a zip file and contained the following items, minus the pictures from testing:
 
 *Content of fr01-win32-update-4.zip, after testing, with screenshots of the test.*<br>
 ![FR01-Update-4](../images/FR01-Update-4.png)
@@ -149,8 +151,7 @@ and indeed I did create singed installer packages for almost all of the variatio
 Today it is recommended to create `.appx` packages for the applications and publish them in the Microsoft Store,
 with Microsoft checking and signing the App for distribution.
 
-Then the application can be installed at the new default location, somewhere, it is possible to find where exactly.
-This makes a lot of sense.
+Then the application can be installed at the new default location. This makes sense.
 
 ## Fazit
 
@@ -168,6 +169,6 @@ The help text is now here.
 
 > [Angular FR](../angular/FREO.html) is the new FR01, which you do not need to install.
 
-With FR69 the matter is more complex, because of configuration, because of listening sockets, and maybe more.
+With FR69 the matter is more complex, because of configuration and because of listening sockets.
 
 [Back to blog index](blog-index.html)
