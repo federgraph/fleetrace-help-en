@@ -4,11 +4,11 @@ lang: en
 title: Blog Restart
 ---
 
-## Update 2019
+## Important Update 2019
 
 I have uploaded the source code of FR01 to GitHub. License is GPL 3.0.
 
-## New Start ( 2006 )
+## New Start of blog ( 2012-06 )
 
 Original Text removed.
 
