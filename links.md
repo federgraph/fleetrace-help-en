@@ -14,27 +14,23 @@ title: Links
 - [about](about.html)
 
 ## Pages
-<ul>
-<li><a href="./pages/page-01.html">page-01</a></li>
-<li><a href="./pages/page-02.html">page-02</a></li>
-<li><a href="./pages/page-03.html">page-03</a></li>
-<li><a href="./pages/page-04.html">page-04</a></li>
-</ul>
+- [page-01 intro](pages/page-01.html)
+- [page-02 stake holders](pages/page-02.html)
+- [page-03 available programs](pages/page-03.html)
+- [page-04 feature matrix](pages/page-04.html)
 
 ## Doc
-<ul>
-<li><a href="./doc/doc-index.html">doc-index</a></li>
-<li><a href="./doc/doc-data-export.html">doc-data-export</a></li>
-<li><a href="./doc/doc-entry-names.html">doc-entry-names</a></li>
-<li><a href="./doc/doc-fria-quick-start.html">doc-fria-quick-start</a></li>
-<li><a href="./doc/doc-input-mode.html">doc-input-mode</a></li>
-<li><a href="./doc/doc-msg-example.html">doc-msg-example</a></li>
-<li><a href="./doc/doc-msg-flow.html">doc-msg-flow</a></li>
-<li><a href="./doc/doc-msg-map.html">doc-msg-map</a></li>
-<li><a href="./doc/doc-schema-image.html">doc-schema-image</a></li>
-<li><a href="./doc/doc-spreadsheet-use.html">doc-spreadsheet-use</a></li>
-<li><a href="./doc/doc-supported-penalties.html">doc-supported-penalties</a></li>
-</ul>
+- [doc-index](doc/doc-index.html)
+- [doc-data-export](doc/doc-data-export.html)
+- [doc-entry-names](doc/doc-entry-names.html)
+- [doc-fria-quick-start](doc/doc-fria-quick-start.html)
+- [doc-input-mode](doc/doc-input-mode.html)
+- [doc-msg-example](doc/doc-msg-example.html)
+- [doc-msg-flow](doc/doc-msg-flow.html)
+- [doc-msg-map](doc/doc-msg-map.html)
+- [doc-schema-image](doc/doc-schema-image.html)
+- [doc-spreadsheet-use](doc/doc-spreadsheet-use.html)
+- [doc-supported-penalties](doc/doc-supported-penalties.html)
 
 ## Blog
 - [blog-index](blog/blog-index.html)
@@ -49,50 +45,51 @@ title: Links
 - [blog-local-workspace](blog/local-workspace.html)
 - [blog-new-start](blog/new-start.html)
 - [blog-why-500](blog/why-500.html)
-</ul>
 
 ## Applications
-<ul>
-<li><a href="./applications/FR.html">FR</a></li>
-<li><a href="./applications/FR01.html">FR01</a></li>
-<li><a href="./applications/FR02.html">FR02</a></li>
-<li><a href="./applications/FR03.html">FR03</a></li>
-<li><a href="./applications/FR04.html">FR04</a></li>
-<li><a href="./applications/FR05.html">FR05</a></li>
-<li><a href="./applications/FR06.html">FR06</a></li>
-<li><a href="./applications/FR08.html">FR08</a></li>
-<li><a href="./applications/FR10.html">FR10</a></li>
-<li><a href="./applications/FR38.html">FR38</a></li>
-<li><a href="./applications/FR62.html">FR62</a></li>
-<li><a href="./applications/FR63.html">FR63</a></li>
-<li><a href="./applications/FR65.html">FR65</a></li>
-<li><a href="./applications/FR66.html">FR66</a></li>
-<li><a href="./applications/FR69.html">FR69</a></li>
-<li><a href="./applications/FR90.html">FR90</a></li>
-<li><a href="./applications/FR91.html">FR91</a></li>
-<li><a href="./applications/FR92.html">FR92</a></li>
-<li><a href="./applications/FR93.html">FR93</a></li>
-<li><a href="./applications/FR94.html">FR94</a></li>
-<li><a href="./applications/FR95.html">FR95</a></li>
-<li><a href="./applications/FR97.html">FR97</a></li>
-<li><a href="./applications/FR98.html">FR98</a></li>
-<li><a href="./applications/FR99.html">FR99</a></li>
-<li><a href="./applicationsF/RIA.html">FRIA</a></li>
-</ul>
+- [FR](applications/FR.html)
+- [FR01](applications/FR01.html)
+- [FR02](applications/FR02.html)
+- [FR03](applications/FR03.html)
+- [FR04](applications/FR04.html)
+- [FR05](applications/FR05.html)
+- [FR06](applications/FR06.html)
+- [FR07](applications/FR08.html)
+- [FR10](applications/FR10.html)
+- [FR38](applications/FR38.html)
+- [FR62](applications/FR62.html)
+- [FR63](applications/FR63.html)
+- [FR65](applications/FR65.html)
+- [FR66](applications/FR66.html)
+- [FR69](applications/FR69.html)
+- [FR90](applications/FR90.html)
+- [FR91](applications/FR91.html)
+- [FR92](applications/FR92.html)
+- [FR93](applications/FR93.html)
+- [FR94](applications/FR94.html)
+- [FR95](applications/FR95.html)
+- [FR97](applications/FR97.html)
+- [FR98](applications/FR98.html)
+- [FR99](applications/FR99.html)
 
 ## Silverlight
-<ul>
-<li><a href="./silverlight/FRIA.html">FRIA</a></li>
-<li><a href="./silverlight/FRIA01.html">FRIA01</a></li>
-<li><a href="./silverlight/FRIA02.html">FRIA02</a></li>
-<li><a href="./silverlight/FRIA03.html">FRIA03</a></li>
-<li><a href="./silverlight/FRIA04.html">FRIA04</a></li>
-<li><a href="./silverlight/FRIA05.html">FRIA05</a></li>
-<li><a href="./silverlight/FRIA06.html">FRIA06</a></li>
-<li><a href="./silverlight/FRIA07.html">FRIA07</a></li>
-<li><a href="./silverlight/FRIA08.html">FRIA08</a></li>
-<li><a href="./silverlight/FRIA09.html">FRIA09</a></li>
-<li><a href="./silverlight/FRIA10.html">FRIA10</a></li>
-<li><a href="./silverlight/FRIA11.html">FRIA11</a></li>
-<li><a href="./silverlight/RVIAC.html">RVIAC</a></li>
-</ul>
+- [FRIA](silverlight/FRIA.html)
+- [FRIAS](silverlight/FRIAS.html)
+- [FRIAS-Layout](silverlight/FRIAS-Layout.html)
+- [FRIA01](silverlight/FRIA01.html)
+- [FRIA02](silverlight/FRIA02.html)
+- [FRIA03](silverlight/FRIA03.html)
+- [FRIA04](silverlight/FRIA04.html)
+- [FRIA05](silverlight/FRIA05.html)
+- [FRIA06](silverlight/FRIA06.html)
+- [FRIA07](silverlight/FRIA07.html)
+- [FRIA08](silverlight/FRIA08.html)
+- [FRIA09](silverlight/FRIA09.html)
+- [FRIA10](silverlight/FRIA10.html)
+- [FRIA11](silverlight/FRIA11.html)
+- [RVIAC](silverlight/RVIAC.html)
+
+## Extern
+- [Hilfe für FR (GitHub Pages)](https://federgraph.github.io/fleetrace-help-de/index.html)
+- [Federgraph.de - FR topic](https://federgraph.de/FR.html)
+- [Federgraph.de - Raw Html Test Data](https://federgraph.de/html/index.html)

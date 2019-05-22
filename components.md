@@ -6,8 +6,6 @@ title: Components
 
 # Components
 
-![FR pyramid](images/FR62-Pyramide-05.png)
-
 Project FR includes normal desktop applications, server processes, timing clients, web applications and Silverlight clients.
 
 Old: The Silverlight client for the FleetRace project is also called the FleetRace Internet Application (FRIA). There are several (active and passive) variations of the Silverlight client.
@@ -15,6 +13,8 @@ Old: The Silverlight client for the FleetRace project is also called the FleetRa
 Old: The Silverlight client as the last part in the chain can be used standalone for the display of static results of a regatta. Static means that the input data is simply placed as a file on a web server. Within the Silverlight client however the results are computed dynamically and can be changed long after the event happened, see demo. The Silverlight client can be licensed for use on the web site of your sailing club or class association. For everyone who is interested in providing results we have assembled a quick start guide.
 
 ## List of Components
+
+![FR pyramid](images/FR62-Pyramide-05.png)
 
 [**FR04**](applications/FR04.html)
 Result server, minified variation, does not save to disc, without configuration, with fixed scenario (bridge server for FRIA). 

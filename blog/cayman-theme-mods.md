@@ -6,11 +6,10 @@ title: FR Cayman theme
 
 # About theme modifications
 
-## Heading Color
+## Headings Color
 
-I am still playing with the **Cayman** theme
-and have just updated the color for the sass variable `section-headings-color`,
-did you notice?
+I played with the [Cayman](https://pages-themes.github.io/cayman/) theme and updated the color for `section-headings-color`.
+It used to be green.
 
 ```css
 ---
@@ -22,13 +21,9 @@ $section-headings-color: #925ad3 !default;
 @import 'start-btn';
 ```
 
-> FR is a water sport, we need more blue than green.
+> Fleet racing is a water sport, we need more blue than green.
 
 This is actually the whole content of my `assets/css/style.scss`.
-In the documentation of the Cayman GitHub-Pages theme they say that custom css or sass should *immediately* follow the import of the jekyll theme.
-
-But what does immediately mean, do they mean there cannot be any empty lines in between.
-For now I took *no* risk, and imported my start-btn immediately, on the next line.
 
 ## Start Button
 
@@ -80,15 +75,18 @@ Just another button, slightly changed from .btn in `jekyll-theme-cayman.scss`:
     }
 }
 ```
-This button is in `start-btn.scss`.
-I changed the color values, because the btn in the Cayman theme is made for the page-header and is fully transparent.
-That means that you can not see the button on a white content background.
+This button is in `start-btn.scss`, in the _sass folder.
 
-Here is how our start-button looks:
+I changed the color values.
+
+In the Cayman theme the button is used on the page-header and is fully transparent with white border.
+Therefore you cannot see the button on a white background in the normal content area.
+
+Our new start-button:
 
 [Top](#){: .start-btn}
 
-And here is the markdown for the button above:
+And the markdown for the button:
 
 ```md
 [Top](#){: .start-btn}

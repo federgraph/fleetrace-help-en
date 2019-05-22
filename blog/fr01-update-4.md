@@ -6,11 +6,11 @@ title: FR01 Update 4
 
 # About FR01 Updates, old updates
 
-This is a pseudo blog post, from 2019-05-21, 05 = May.
+This is a pseudo blog post, from 2019-05-21.
 
 - I wanted to add an old *Blog Post*, about Update 2.
-- And I wanted to briefly deal with Update 4, because it existed.
-- And I have made some small modifications of the [theme](cayman-theme-mods.html).
+- I wanted to briefly deal with Update 4, because it existed.
+- I have made some small modifications of the [theme](cayman-theme-mods.html).
 
 ## Update 2
 
@@ -19,13 +19,16 @@ You can use it to load/reload text from the **Memo** on *page Report*.
 Let the application directly load data you have changed/edited in the Memo control.
 
 Two more buttons have been added to *page Report* too.
-They can be used to toggle between the separator char used in csv lists, in the Memo.
+They can be used to toggle the separator char used in csv lists, in the Memo.
 The buttons will make it easier to *exchange* data with Excel.
 
-1. Before you copy data out of the Memo for pasting into Excel, you convert to **Tab** separator.
+1. Before you copy data out of the Memo for pasting into Excel:
+convert to **Tab** separator.
 
-2. After you have pasted data from Excel into the Memo you convert back to using **Semicolon** as a separator.
+2. After you have pasted data from Excel into the Memo:
+convert back to using a **Semicolon** as a separator.
 This is necessary in order to load text data successfully, with button Read on page Menu.
+And you can *see* the separator char, it looks better, tabs are invisible in the Memo.
 
 > FR expects csv data to be semicolon separated.
 
@@ -117,7 +120,7 @@ App: FR01.exe
 [Run anyway] [Don't run]
 ```
 
-> I clicked on **Run anyway**, because I trusted my own program !
+> I clicked on **Run anyway** because I trusted my own program !
 
 ### About FR01-de.chm in Update 4
 
@@ -140,8 +143,8 @@ From: C:\Users\UserName\Downloads\Update-4\FR01-de.chm
 
 ## MSI Packages
 
-Using an signed `.msi` Installer package would have been *easier*,
-and indeed I did create singed installer packages for almost all of the variations of FR, e.g:
+Using a signed `.msi` Installer package would have been easier.
+And back then I did create signed installer packages for almost all of the variations of FR, e.g:
 
 - FR38Setup.msi (signed Dienstag, 19. April 2011 15:54:45)
 - FR94Setup.msi (signed Mittwoch, 1. Juni 2011 08:14:15)
@@ -149,23 +152,19 @@ and indeed I did create singed installer packages for almost all of the variatio
 ## Windows Store
 
 Today it is recommended to create `.appx` packages for the applications and publish them in the Microsoft Store,
-with Microsoft checking and signing the App for distribution.
-
-Then the application can be installed at the new default location. This makes sense.
+with Microsoft checking and signing the App for distribution. This makes sense
 
 ## Fazit
 
 > Compile yourself.
 
-Other than that there are open questions, among those the question of overall effort/complexity,
-and the question regarding flexibility.
+It can seem to make sense to create a folder in `D:\Fleetrace\`,
+unpack a zip file with FR01 in the folder, 
+together with some example data files, 
+which you can edit with VS Code, 
+from that writable location.
 
-It can seem to make sense to:
-- create a folder in `D:\Fleetrace\`
-- unpack a zip file with FR01 in this location
-- perhaps even together with some example data files
-
-The help text is now here.
+The help text is now **here**, on GitHub-Pages.
 
 > [Angular FR](../angular/FREO.html) is the new FR01, which you do not need to install.
 

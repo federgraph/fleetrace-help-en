@@ -6,7 +6,7 @@ lang: en
 
 # Fleetrace Event Only App
 
-*Screenshot von Freo.*<br>
+*Screenshot of Freo SPA app.*<br>
 ![Screenshot von FREO](../images/FREO.png)
 
 The last action taken in the picture above has been: **Bib 2** was tapped on, while `dnf` was selected.
@@ -14,9 +14,17 @@ Note that the radio button selection jumps back automatically to the default val
 Previously the finish of Bib 4 and Bib 6 had been recorded.
 We are in Race 1 (**R1**) and Bib 2 (bow number 2) is currently selected because it was last used.
 
-## Externer Link
+If you look at the Pts column you may notice that R2 contributes 1 point for all entries.
+You can make this more obvious by showing points instead of finish positions in race columns.
+And you could fix it by setting R2 to disabled, or by removing race 2 altogether.
+There is no button for setting a race to disabled status in Freo, but it can still be accomplished.
 
-[Start von FREO](https://federgraph.de/freo/index.html){: .start-btn }
+You should prepare the event for download, so that users will find the event to be ready to go,
+ready for timing data input, for the finish positions of the current race.
+
+## External Link
+
+[Start FREO](https://federgraph.de/freo/index.html){: .start-btn }
 
 ## About FREO
 
@@ -25,7 +33,7 @@ An Angular / Typescript application for FR.
 FREO is the **Event Only** version.
 
 You can record timing data (finish positions and penalty/status value assignments).
-The current standing is compute by the App.
+The current standing is computed by the App.
 
 ## Getting Started
 

@@ -11,6 +11,7 @@ The server (light blue) shall have two server sockets (one to the left and one t
 Input client and output client have one client socket respectively and connect manually to the server.
 A typical scenario is given below which starts with a single line messages (top left):
 
+*message-flow image, made with Delphi*<br>
 ![Message-Flow Graph](../images/MsgFlow.png)
 
 - The timing provider (sensor) sends a message in its own format.
@@ -32,6 +33,9 @@ A typical scenario is given below which starts with a single line messages (top 
   The report will also be stored in the Cache.
 - Future requests for exactly this report may not be computed again but taken directly from the Cache.
 
+*complete traditional message flow picture*<br>
+![Message-Flow 01 Blue](../images/MsgFlow-01-blue.jpg)
+
 Because single line messages received at input side are passed on unchanged
 to potentially several connected clients
 a tree like/cascading network of (identical) servers can be established
@@ -47,11 +51,24 @@ A Switch implementation is available as a Delphi application (also in the form o
 In contrast, there is a whole hierarchy of implementations of the Bridge concept.
 The server application always uses a client socket (tcp or http or internal) in order to establish a connection to the Bridge.
 
-It is possible to receive multi line messages at the server input socket.
-These multi line messages are not passed on to clients.
-The normal use of a multi line message is a list of input messages.
+It is possible to receive multiline messages at the server input socket.
+These multiline messages are not passed on to clients.
+The normal use of a multiline message is a list of input messages.
 
 A message at input side can be prepended by one or more request (of report/output).
 This makes a Request/Response pattern possible through the input socket.
 But input messages can only be sent to the input socket,
 input messages are not processed when sent to the output socket.
+
+## Improved Message Flow
+
+If the output client does not need to request info,
+because it is up to date and can compute the new state when it receives a single line message,
+the message flow picture looks like so:
+
+*picture of streamlined message flow*<br>
+![Message-Flow 02 Blue](../images/MsgFlow-02-blue.jpg)
+
+In this situation, only a tiny amount of data is flowing through the system.
+
+[message map](doc-msg-map.html)
