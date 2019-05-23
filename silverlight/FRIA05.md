@@ -22,5 +22,3 @@ The image (screenshot) shows FRIA05, when served from the desktop application.
 and a directory listing of these files in form of EventMenu.xml.
 - The server can be a Linux web server, of course.
 - The application has been tested with Internet Explorer, Firefox and Safari.
-
-You could try it out from the Demo page (in 2012).

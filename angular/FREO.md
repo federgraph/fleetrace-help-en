@@ -19,8 +19,12 @@ You can make this more obvious by showing points instead of finish positions in 
 And you could fix it by setting R2 to disabled, or by removing race 2 altogether.
 There is no button for setting a race to disabled status in Freo, but it can still be accomplished.
 
-You should prepare the event for download, so that users will find the event to be ready to go,
-ready for timing data input, for the finish positions of the current race.
+```
+FR.*.W2.IsRacing=False // there is an icon button for this in other Angular apps.
+```
+
+You should prepare the download of the event so that users will be ready to go,
+ready for timing data input, for the current race.
 
 ## External Link
 

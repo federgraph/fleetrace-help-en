@@ -7,15 +7,17 @@ lang: en
 
 # FRIAS Layout
 
-Silverlight Control FRIAS can be placed with different size on a page.
-In this way several different layouts can be achieved.
-The user could choose a layout with the help of **DemoMenu.xap**, itself a Silverlight Control:
+> Note: Silverlight is a discontinued technology.
+
+FRIAS is a Silverlight Control that can be placed on a web page using different size and position.
+The user could choose a layout with the help of **DemoMenu.xap**, wich is also a Silverlight Control:
 
 *Screenshot of DemoMenu.xap*<br>
 ![Layout](../images/FRIA-Layout.png)
 
-What you cannot see in the Picture is the hover effect - when the user is moving the mouse from button to button.
-the orange rechtangle is supposed to be FRIAS, in the desired size.
+The orange rechtangle is supposed to be FRIAS, in the desired size and position.
+
+There may or may not be other elements on that page, like normal content.
 
 ## DemoMenu.xap
 
@@ -30,26 +32,26 @@ It was placed on a page like so:
 <param name="autoUpgrade" value="true" />
 ```
 
-I have started up an older machine with Windows XP in order to take the screenshot.
+In order to see the Silverlight Control you need to use Internet Explorer browser.
+IE 11 on the latest Windows 10 should be good.
 
-At my current machine with Windows 10 there is no support for Silverlight any more, 
-and the old projects cannot be loaded into Visual Studio 2019.
-I could open the old projects in VS Code, but here I just wanted to see if it still works,
-now that I update the writing about it, in `May 2019`.
+> The old Silverlight projects cannot be loaded into Visual Studio 2019 any more.
+> But I can open the projects in VS Code and have a look.
 
-Back to the test of DemoMenu.xap with Windows XP. The control appears on the screen ok, 
-but when I click a button nothing happens.
-It was expected to take me to another html page with **FRIAS.xap**, supposed to be configured to have the chosen layout,
-there may or may not be other elements on that page, like normal content.
+Back to the test of DemoMenu.xap. 
+The control appears on the screen ok, but when I click a button nothing happens.
+It was expected to take me to another html page with **FRIAS.xap**, supposed to be configured to have the chosen layout.
 
 > It worked in the past.
 
-The good new: If I call up [FRIAS-1.html](FRIAS.html) directly it still works, and that is nice.
+TODO: replace layout selector xap with simple Image.
+
+The good news: If I call up [FRIAS](FRIAS.html) host page directly it still works.
 
 ## Full Screen (Align Client)
 
 In order to show FRIAS as big as possible in the browser window, and to keep it aligned when resizing,
-some `css` and `javascript` is used, like so:
+some css and javascript is used, like so:
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
