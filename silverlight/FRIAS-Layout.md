@@ -117,7 +117,6 @@ d.width(b.width() - d.offset().left);
 
 This should be the layout variation FRIAS-6, according to button position 6, 
 see bottom right button in the picture.
-It still works, on the old machine, where support for Silverlight installed.
 
 > But it should be all about the modern variations.
 

@@ -14,7 +14,7 @@ This means that it has several pages for the user to click on.
 RVIAC contains the following pages:
 
 - SKIA, shows electronic compasses in an interesting way 
-- FRIA, the demo for the FleetRace project 
+- FRIA, the demo for the Fleetrace project 
 - RGIA, the Silverlight variation of the rig applet 
 - About, a page with a short help text 
 - Slides, a page with a bunch of rig related vector images 

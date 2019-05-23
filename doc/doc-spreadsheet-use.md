@@ -70,7 +70,7 @@ Please see the result examples, which are given in Xml and Text format.
 
 ### Fleet membership
 
-FR claims to support all features required to score an official FleetRace type Olympic class regatta.
+FR claims to support all features required to score an official Fleetrace type Olympic class regatta.
 It includes racing in fleets as well as the medal race.
 What the program will intentionally not do because of frequently changing requirements
 is the evaluation of the fleet membership itself.

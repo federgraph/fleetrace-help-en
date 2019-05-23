@@ -8,7 +8,7 @@ title: Overview
 
 ## Abstract
 
-FleetRace (FR) is a compact timing and scoring system for sailing.
+Fleetrace (FR) is a compact timing and scoring system for sailing.
 It has been designed for use by both the participants in a regatta and the race management team.
 The idea is that the data is available in electronic form, and each node will compute the results.
 Then the consumer of the data can carry out a what-if-analysis on its own, 
@@ -52,7 +52,7 @@ The client can be a desktop application or a Silverlight browser application.
 A new notebook from Apple is as good as a Windows 7 machine.
 It will run on a 5 year old desktop too.
 Make sure the Silverlight-Plugin is installed on the client machine.
-The FleetRace client application is a fully enabled application which deserves good screen and keyboard.
+The Fleetrace client application is a fully enabled application which deserves good screen and keyboard.
 The server will serve html pages too.
 The design of these pages can be improved to match your taste.
 

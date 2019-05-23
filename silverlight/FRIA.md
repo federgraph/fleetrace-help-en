@@ -8,13 +8,13 @@ title: FRIA
 
 # FRIA
 
-## FleetRace Internet Application
+## Fleetrace Internet Application
 
-A number of internet applications (FRIA) have been created for the FleetRace project (FR).
+A number of internet applications (FRIA) have been created for the Fleetrace project (FR).
 The FRIA applications are Silverlight applications.
 These applets are used to present results of a sailing regatta.
 
-In contrast to the desktop applications the Silverlight variations of FleetRace can be demonstrated live in a browser.
+In contrast to the desktop applications the Silverlight variations of Fleetrace can be demonstrated live in a browser.
 We have two demo applets online.
 
 ## FRIA05
@@ -54,7 +54,7 @@ The look of the Silverlight applications is certainly important.
 RiggVar Software intends to collaborate with designer(s) so that an individual look can be provided.
 The special design may include the logo of the host club and/or sponsor logos.
 
-The RiggVar FleetRace Internet Applications are licensed for use on a site.
+The Fleetrace Internet Applications are licensed for use on a site.
 The individual design will be applied when the project is compiled for use on the target site.
 
 Even if one starts with the default look to test the technical aspect, an update of the design can always be done later.

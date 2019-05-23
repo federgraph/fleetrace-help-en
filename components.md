@@ -8,7 +8,7 @@ title: Components
 
 Project FR includes normal desktop applications, server processes, timing clients, web applications and Silverlight clients.
 
-Old: The Silverlight client for the FleetRace project is also called the FleetRace Internet Application (FRIA). There are several (active and passive) variations of the Silverlight client.
+Old: The Silverlight client for the Fleetrace project is also called the Fleetrace Internet Application (FRIA). There are several (active and passive) variations of the Silverlight client.
 
 Old: The Silverlight client as the last part in the chain can be used standalone for the display of static results of a regatta. Static means that the input data is simply placed as a file on a web server. Within the Silverlight client however the results are computed dynamically and can be changed long after the event happened, see demo. The Silverlight client can be licensed for use on the web site of your sailing club or class association. For everyone who is interested in providing results we have assembled a quick start guide.
 

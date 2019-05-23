@@ -8,7 +8,7 @@ title: Schnellstart
 
 ## Einleitung
 
-If you want to use the FleetRace Internet Application (FRIA) on your website you have to provide the data.
+If you want to use the Fleetrace Internet Application (FRIA) on your website you have to provide the data.
 This article is a primer on how to create the xml or txt data.
 Talking about FRIA we mean FRIA05.xap,
 also referred to in the context of this article as the Silverlight client.
