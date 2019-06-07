@@ -76,6 +76,7 @@ title: Links
 - [FRIA](silverlight/FRIA.html)
 - [FRIAS](silverlight/FRIAS.html)
 - [FRIAS-Layout](silverlight/FRIAS-Layout.html)
+- [Feature Map](silverlight/FeatureMap.html)
 - [FRIA01](silverlight/FRIA01.html)
 - [FRIA02](silverlight/FRIA02.html)
 - [FRIA03](silverlight/FRIA03.html)
