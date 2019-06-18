@@ -65,7 +65,7 @@ Also contains one or more requests of a report.
 The primary application object (BO) is recreated and destroyed after the method call (Calc).
 This is a typical case in a web application.
 But it is also the case with a stateless Test/Calc server.
-- **B7 Calc Statefull** - A multi line message sent via an internal connection to Input B.
+- **B7 Calc Stateful** - A multi line message sent via an internal connection to Input B.
 Contains a request of a report.
 The BO is not recreated; the status of the BO is maintained. 
 - **B8 Event Type ID** - marks an internal connection with the Event-Type-ID.

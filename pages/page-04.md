@@ -83,7 +83,7 @@ Reports can be requested via the sockets.</dd>
 <dt>Web Receiver</dt>
 <dd>This is the interface a Web Sender can connect to via protocol tcp.
 It is used when there is an external stateless website
-which proxies part of the requests to the statefull FR server application.</dd>
+which proxies part of the requests to the stateful FR server application.</dd>
 
 <dt>FR66 Web Sender</dt>
 <dd>This is an example of a website, that will proxy requests via tcp to the FR server application.

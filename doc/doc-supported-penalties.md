@@ -16,7 +16,7 @@ to the model used in the Open Source Project JavaScore.
 Therefore it should be possible for the host program to write an xml file with input data
 that can be read by the JavaScore scoring program.
 
-You can use the [FR](../applications/F.html) system to collect timing data from the timing provider,
+You can use the [FR](../applications/FR.html) system to collect timing data from the timing provider,
 and then perform the calculation of results within the JavaScore program.
 
 With the help of the dialog you can for the purpose of testing
